@@ -1,0 +1,102 @@
+body{
+    background-color: #333;
+}
+
+.box{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    animation-name: myanimation;
+    animation-duration: 4s;
+}
+
+
+.text{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+
+    animation-name: mytext;
+    animation-duration: 2s;
+}
+
+.hello{
+    
+    animation-name: hello;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.to{
+    position: relative;
+
+
+    animation-name: to;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.clinton{
+    animation-name: clinton;
+}
+
+.img{
+    
+    position: relative;
+    animation-name: img;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes img{
+    0%{top: 20px;}
+    10%{top: 40px;}
+    20%{top: 65px;}
+    30%{top: 80px;}
+    40%{top: 100px;}
+    50%{bottom: 10px;}
+    60%{bottom: 20px;}
+    70%{bottom: 30px;}
+    80%{bottom: 40px;}
+    90%{bottom: 50px;}
+    100%{bottom: 60px;}
+}
+
+
+@keyframes hello{
+
+    0%{opacity: 0; color: red;}
+
+    25%{opacity: 25; color: aqua;}
+    50%{opacity: 50; color: black;}
+    75%{opacity: 75; color: blueviolet;}
+
+    100%{opacity: 100; color: aliceblue;}
+}
+
+@keyframes to{
+        0%{bottom: 2000000px;}
+        25%{bottom: 20000px;}
+        50%{bottom: 200px;}
+        75%{bottom: 20px;}
+        100%{top: 0px;}
+}
+
+
+/* @keyframes myanimation{
+    0%{background-color: white; left: 0px; top: 0px;}
+
+    25%{background-color: red; left: 300px; top: 0px;}
+    50%{background-color: green; left: 300px; top: 300px;}
+    75%{background-color: blue; left: 0px; top: 300px;}
+
+    100%{background-color: white; left: 0px; top: 0px;}
+} */
